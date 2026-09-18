@@ -2,7 +2,7 @@
 name: tailor-resume
 description: >-
   Walks through the exact steps for tailoring a resume to a given job description, conducting a gap analysis, and producing useful talking points.
-  Use this whenever the I share a job posting, JD, requisition, job link, or role and want my resume adapted, tuned, optimized, or "made a fit" for it - including phrasings like "here's a role, help me apply", "tailor my resume for this", "am I a fit for this?", "make my CV match this posting", or when I paste JD text or a careers-page URL alongside my intent to apply. 
+  Use this whenever I share a job posting, JD, requisition, job link, or role and want my resume adapted, tuned, optimized, or "made a fit" for it - including phrasings like "here's a role, help me apply", "tailor my resume for this", "am I a fit for this?", "make my CV match this posting", or when I paste JD text or a careers-page URL alongside my intent to apply. 
   Also use when I ask for application talking points, a keyword/ATS gap check against a posting, or ask which of my projects to feature for a role. Prefer this skill over ad-hoc editing so the tailoring stays consistent, honest, and grounded in my actual master resume and career profile.
 ---
 
@@ -31,7 +31,7 @@ The guiding principles throughout:
 Read the following three reference files before doing anything else. They are the single source of truth; do not tailor from memory. Look for them first under `/mnt/project/`, then under `references/`. If you don't find them in either of those location, prompt me to provide them to you.
 
 - `master_resume.md`: The full, comprehensive resume. Everything in the tailored output must trace back to something here.
-- `career_profile.md`: The strategic context for my career including long-term and short-to-mid-term goals, target companies, strengths, weaknesses, and known gaps, and how Rishabh categorizes roles. Drives the summary and the talking points.
+- `career_profile.md`: The strategic context for my career including long-term and short-to-mid-term goals, target companies, strengths, weaknesses, and known gaps. This will drive the talking points later.
 - `sample_resume.docx`: If this file is present, you will make sure that the outputted tailored resume's formatting matches it exactly. That includes how various pieces of information (such as job title, company name, timeline, location, key technologies, resume points, etc under Work Experience) are laid out. That also includes coverage of the different headings (Summary, Work Experience, Education, etc).
 
 
@@ -145,7 +145,6 @@ If the drafted content is heading past a clean ~2 pages (or the sample resume's 
 ### Guardrails
 - **Truthful reword only.** Rewording should change emphasis and vocabulary, never facts. If a rewrite would imply more scope, seniority, or depth than the master resume supports, pull it back. This applies doubly to points tagged `handle honestly` in the selection step - surface them without letting them overclaim.
 - **Bold discipline.** Less than 3 bolded span per point; never bold a whole bullet. The fewer bold spans, the better.
-- **The retained summary line is fixed.** Reproduce it exactly, as the last sentence of the summary - no edits, no paraphrase.
 
 ### Output format
 Produce a single **tailored resume draft** in structured markdown that the next step can lay out directly. Start with a short header block, then the content in final order:
