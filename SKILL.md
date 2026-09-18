@@ -2,7 +2,7 @@
 name: tailor-resume
 description: >-
   Walks through the exact steps for tailoring a resume to a given job description, conducting a gap analysis, and producing useful talking points.
-  Use this whenever the I share a job posting, JD, requisition, job link, or role and want my resume adapted, tuned, optimized, or "made a fit" for it - including phrasings like "here's a role, help me apply", "tailor my resume for this", "am I a fit for this?", "make my CV match this posting", or when I paste JD text or a careers-page URL alongside my intent to apply. 
+  Use this whenever I share a job posting, JD, requisition, job link, or role and want my resume adapted, tuned, optimized, or "made a fit" for it - including phrasings like "here's a role, help me apply", "tailor my resume for this", "am I a fit for this?", "make my CV match this posting", or when I paste JD text or a careers-page URL alongside my intent to apply. 
   Also use when I ask for application talking points, a keyword/ATS gap check against a posting, or ask which of my projects to feature for a role. Prefer this skill over ad-hoc editing so the tailoring stays consistent, honest, and grounded in my actual master resume and career profile.
 ---
 
@@ -31,7 +31,7 @@ The guiding principles throughout:
 Read the following three reference files before doing anything else. They are the single source of truth; do not tailor from memory. Look for them first under `/mnt/project/`, then under `references/`. If you don't find them in either of those location, prompt me to provide them to you.
 
 - `master_resume.md`: The full, comprehensive resume. Everything in the tailored output must trace back to something here.
-- `career_profile.md`: The strategic context for my career including long-term and short-to-mid-term goals, target companies, strengths, weaknesses, and known gaps, and how Rishabh categorizes roles. Drives the summary and the talking points.
+- `career_profile.md`: The strategic context for my career including long-term and short-to-mid-term goals, target companies, strengths, weaknesses, and known gaps. This will drive the talking points later.
 - `sample_resume.docx`: If this file is present, you will make sure that the outputted tailored resume's formatting matches it exactly. That includes how various pieces of information (such as job title, company name, timeline, location, key technologies, resume points, etc under Work Experience) are laid out. That also includes coverage of the different headings (Summary, Work Experience, Education, etc).
 
 
@@ -98,9 +98,9 @@ Here's an example:
 
 | Sub-heading | Resume point | Reason for selection | JD requirement |
 |---|---|---|---|
-| <Company> — <Senior Title> | Cut deployment cycle time significantly by introducing automated pipelines | must-have | "Utilize CI/CD tools to set up automated pipelines" |
-| <Company> — <Title> | Re-architected a core service from one stack to another, sustaining high throughput | must-have, handle-honestly | "distributed systems in production" / <a named language or tool> |
-| <Company> — <Junior/Grad Title> | Led a small team of junior engineers to ship a service as a REST API | anchor | — (general credibility: leadership/seniority) |
+| DocuSign - Senior ML Engineer | Reduced deployment and maintenance cycles from 2 months to 1 week... | must-have | "Utilize CI/CD tools to set up automated pipelines" |
+| Aquabyte.ai - ML Engineer | Migrated a Go + DynamoDB architecture to a Python + PostgreSQL architecture (2 GB/s throughput) | must-have, handle honestly | "distributed systems in production" / Go experience |
+| Citigroup - Graduate SW Engineer | Led 7 interns and 2 junior developers to build a recommendation system as a REST API | anchor | - (general credibility: leadership/seniority) |
 ```
 
 #### Gaps List
@@ -123,7 +123,7 @@ Rewrite each selected point. Stay truthful to what the master resume says - rewo
 
 - **Cover JD keywords aggressively but honestly.** Work the JD's concrete skills, tools, and terms into the points wherever the candidate genuinely has them - this is the single biggest ATS lever. Never insert a keyword the master resume doesn't support.
 - **Mirror the JD's phrasing only if the JD is clearly human-written.** First judge whether the JD looks AI-generated (tells: generic boilerplate, vague or oddly balanced responsibilities, filler phrasing, no company-specific detail, repetition). If it reads AI-generated, do **not** echo its sentence-level phrasing - it's noise and mirroring it can look off. Extract its keywords and requirements either way; do *phrase-matching* only for human-written JDs.
-- **Lead with what this JD cares about.** The same point can be angled differently depending on the JD's focus. Put the aspect the JD weights most at the front of the sentence. E.g. for a point like "led development of a platform serving many models": if the JD is leadership-focused, foreground envisioning/scoping/driving the initiative; if it's delivery-focused, foreground the scale and the specific features built. Same facts, different emphasis.
+- **Lead with what this JD cares about.** The same point can be angled differently depending on the JD's focus. Put the aspect the JD weights most at the front of the sentence. E.g. for "led development of a platform serving many models": if the JD is leadership-focused, foreground envisioning/scoping/driving the initiative; if it's delivery-focused, foreground the scale (25+ models) and the features built. Same facts, different emphasis.
 - **Split long points.** If a selected point packs in multiple distinct accomplishments or runs long, break it into separate points so each is skimmable. Splitting is for readability only - do not let one accomplishment become two to pad the list, and do not duplicate the same metric across both halves.
 - - **Preserve embedded links.** Master-resume points often carry markdown links (project repos, publications, articles, company/product pages). When you reword or split a point, keep every link and its destination intact, anchored to sensible text — the project / paper / article / company name, never a bare "here" or a raw URL. Keep them in markdown `[anchor](url)` form in the draft so the formatting step can render them. If a point is split, the link travels with the half it belongs to. Never drop a link to tidy a sentence, and never invent, guess, or alter a URL — carry it exactly as it appears in the master resume.
 - **Bold the most relevant phrase in each point - selectively.** Bold the single most JD-relevant span (a metric, a tool, a scope word), not whole sentences. If everything is bold, nothing stands out; aim for <3 bolded spans per point so the eye lands on the proof points as it skims.
@@ -135,10 +135,13 @@ Rewrite each selected point. Stay truthful to what the master resume says - rewo
 ### Draft the Summary section (first section of the resume)
 Write a 3-4 sentence professional summary that speaks directly to this role. Anchor it to the **company values** and **hidden priority** identified earlier - it should read as if written for this team, foregrounding the 2-3 strengths they most need. Keep it truthful and consistent with the reworded points; do not claim anything the body can't back up.
 
+**End the summary with this exact line, verbatim:**
+> I am a natural leader with a desire to help people grow, and to turn ambitious ideas into reality. Curious, skillful, and creative.
+
 ### Draft the Skills section (conditional - only if the resume is running long)
 If the drafted content is heading past a clean ~2 pages (or the sample resume's implied length), add a **Skills** section immediately under the Summary. Its purpose is to absorb keyword-coverage duty in a compact form, so lower-value bullets that existed mainly to surface a keyword can be cut - net-shortening the resume while keeping ATS coverage.
 
-- Categorize into **2-4 sub-sections** with sensible labels (e.g. one for cloud/infra skills like AWS, Kubernetes, Terraform; another for leadership skills like navigating ambiguity, project scoping and execution). Mix hard and soft skills as fits.
+- Categorize into **2-4 sub-sections** with sensible labels (e.g. one for cloud/infra skills like AWS, Kubernetes, Terraform; another for leadership skills like navigating ambiguity, ML project scoping and execution). Mix hard and soft skills as fits.
 - **Every listed skill must be evidenced by a master-resume point.** This section is drawn from the actual skillset, not the JD. It must **not** look like a dump of the JD's requirements - a reviewer who cross-checks it against the bullets should find each skill demonstrated. If a JD skill isn't backed by the resume, it belongs in the gaps list, not here.
 - Don't just restate bullet phrases - this is an at-a-glance index, complementary to the detailed points.
 
@@ -220,7 +223,7 @@ Start from the Gaps List. For each gap, and for the role as a whole:
 
 
 ## Step 6 - Produce talking points and a study plan (deliverable 3)
-This is the deliverable that gives me an edge, so feel free to be creative, opnionated, and subjective. However, ground the output in the following three thingsL:
+This is the deliverable that gives me an edge, so feel free to be creative, opnionated, and subjective. However, ground the output in the following three things:
 1. The tailored resume
 2. The Gap Analysis (produced in the previous step)
 3. **Fresh research on the company's current direction.**
