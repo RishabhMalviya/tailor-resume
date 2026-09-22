@@ -77,10 +77,10 @@ If the skill doesn't trigger, name it explicitly (e.g. "Use the tailor-resume sk
 
 The skill works in stages: it breaks down the job description, selects points from your master resume (with the reason for each), rewrites them, and then produces the final resume, gap analysis, and talking points. Check each stage before moving on. Correct anything that overstates your experience or doesn't sound like you, since you'll be the one defending it in an interview.
 
-# Customizing
+## Customizing
 
 `SKILL.md` is plain markdown, so you can edit it to fit your preferences, such as page limit, summary length, or how many talking points you want. If you change what the skill should respond to, update the `description` in the frontmatter too, since that's what Claude uses to decide when to trigger it.
 
-# Privacy note
+## Privacy note
 
 Your resume, career profile, and contact details are personal. Keep `contact_details.json` and `sample_resume.docx` out of version control (they're already in `.gitignore`). If you fork this repo, don't commit your filled-in `master_resume.md` or `career_profile.md` to a public repository.
