@@ -2,8 +2,8 @@
  
 MLOps & ML Infrastructure Engineer | Cloud Infrastructure | Robotics & Reinforcement Learning
 
-<Location> • <Phone> • <Email>
-[LinkedIn](<LinkedIn_URL>) • [GitHub]<GitHub_URL> • [Personal Website](<PersonalWebsite_URL>)
+Location • Phone • Email
+[LinkedIn](LinkedIn_URL) • [GitHub](GitHub_URL) • [Personal Website](PersonalWebsite_URL)
 
 ## PROFESSIONAL SUMMARY
 
