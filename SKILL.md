@@ -2,8 +2,6 @@
 name: tailor-resume
 description: >-
   Walks through the exact steps for tailoring a resume to a given job description, conducting a gap analysis, and producing useful talking points.
-  Use this whenever I share a job posting, JD, requisition, job link, or role and want my resume adapted, tuned, optimized, or "made a fit" for it - including phrasings like "here's a role, help me apply", "tailor my resume for this", "am I a fit for this?", "make my CV match this posting", or when I paste JD text or a careers-page URL alongside my intent to apply. 
-  Also use when I ask for application talking points, a keyword/ATS gap check against a posting, or ask which of my projects to feature for a role. Prefer this skill over ad-hoc editing so the tailoring stays consistent, honest, and grounded in my actual master resume and career profile.
 ---
 
 # Resume Tailoring
@@ -30,6 +28,7 @@ The guiding principles throughout:
 
 Read the following three reference files before doing anything else. They are the single source of truth; do not tailor from memory. Look for them first under `/mnt/project/`, then under `references/`. If you don't find them in either of those location, prompt me to provide them to you.
 
+- `contact_details.json`: Contact details that are referenced in the `master_resume.md`. This is a separate file because this information is often sensitive.
 - `master_resume.md`: The full, comprehensive resume. Everything in the tailored output must trace back to something here.
 - `career_profile.md`: The strategic context for my career including long-term and short-to-mid-term goals, target companies, strengths, weaknesses, and known gaps. This will drive the talking points later.
 - `sample_resume.docx`: If this file is present, you will make sure that the outputted tailored resume's formatting matches it exactly. That includes how various pieces of information (such as job title, company name, timeline, location, key technologies, resume points, etc under Work Experience) are laid out. That also includes coverage of the different headings (Summary, Work Experience, Education, etc).
@@ -178,6 +177,9 @@ Carry every sub-heading's metadata (title, company, dates, location, tech) verba
 
 ## Step 4 - Format the final resume (deliverable 1)
 Take the tailored resume draft from the previous step and render it into a polished, well-formatted resume file. This step is layout only - do not reword, re-order, re-bold, or add/remove content. If content genuinely doesn't fit the target layout, trim per the length rules already decided or flag it; never silently rewrite here.
+
+### Header Section
+- Include the candidate's name, title, and contact information from `contact_details.json` at the top of the resume. If the sample resume has a specific layout for this, match it exactly.
 
 ### If `sample_resume.docx` is present
 Inspect the layout of the `sample_resume.docx` with the docx skill and replicate it exactly: how each Work-Experience entry arranges title / company / dates / location / tech / points (same line vs. stacked, alignment, which fields are bold or italic), the heading set and their order, fonts, sizes, spacing, and bullet style. Then pour the drafted content into that structure and produce the resume as a `.docx`:
