@@ -29,11 +29,10 @@ Since this skill is meant for low-volume applications, it requires you to do a b
 | `contact_details.json` | Yes | Location, phone, email, and links. It's kept separate from the resume because it's sensitive. |
 | `sample_resume.docx` | No | An existing resume whose layout, fonts, and heading order the output should match exactly. Without it, the skill outputs markdown and offers to convert it to a `.pdf` or `.docx` file. |
 
-Templates are provided for each of the required file under the [`references`](references) folder. The skill looks for these files in two places, in this order:
-
-1. `/mnt/project/`: This is the location where files are uploaded to in Claude Projects. You may be using a different harness setup, so the next option is what you should use.
-2. `references/`: The folder inside the skill itself.
-3. If it can't find them in either place, it asks you to provide them.
+Templates are provided for each of the required file under the [`references`](references) folder. Once you've filled in the files with your information, run the following command from the root of the repo and you should be good to go:
+```bash
+for f in references/*.template; do mv -- "$f" "${f%.template}"; done
+```
 
 ## Usage
 
@@ -57,7 +56,8 @@ For the skill to run end to end, the agent needs to be able to:
 Fill in the files described in [Setup](#setup) and make them available to the agent in one of these ways:
 
 - Put them in the skill's `references/` folder (the simplest option for local agents).
-- Upload or attach them to the conversation or workspace. If they end up somewhere other than `/mnt/project/` or `references/`, tell the agent where they are.
+- Upload or attach them to the conversation or workspace. In [Claude Projects](https://support.claude.com/en/articles/9517075-what-are-projects), you can add them to the project's context. 
+- If they are somewhere other than `/mnt/project/` or `references/`, the agent will ask you where the files are each time. You can change this behavior by editing [this section](SKILL.md#step-0---load-the-source-material-always-first) of the [SKILL.md](SKILL.md)
 
 ### 4. Trigger it
 
