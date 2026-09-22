@@ -1,8 +1,8 @@
 # FIRST_NAME LAST_NAME
 
-<target_job_title_1> | <target_job_title_1>
+target_job_title_1 | target_job_title_1
 
-<location>> • <phone> • <email>
+location • phone • email
 [LinkedIn]() • [GitHub]() • [Personal Website]()
 
 ---
@@ -24,10 +24,9 @@
 
 ## WORK EXPERIENCE
 
-### <Company> - <Role>
-<Start_Date> - <End_Date> | <Location>
+### Company - Role
+Start Date - End Date | Location
 *Tech Stack: Python, Supabase, Cloudflare, Huggingface, LangChain*
-
 - This is the first resume point
 - This is the second resume point
   - Since this is just the master resume
@@ -38,9 +37,8 @@
 
 ## EDUCATION
 
-### <Institute> - <Course/Degree>
-<Dates>
-
+### Institute - Course/Degree
+Dates
 - Any interesting projects/internships/accolades/competitions can go here  
 
 ---
