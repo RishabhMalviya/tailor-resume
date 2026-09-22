@@ -1,10 +1,9 @@
 # RISHABH MALVIYA
  
-Machine Learning Engineer | MLOps & ML Platforms Specialist
+MLOps & ML Infrastructure Engineer | Cloud Infrastructure | Robotics & Reinforcement Learning
 
-San Francisco, CA • <phone> • rishabh.malviya@gmail.com
-[linkedin.com/in/rish-malviya](https://linkedin.com/in/rish-malviya) • [github.com/RishabhMalviya](https://github.com/RishabhMalviya) • [rishabhmalviya.github.io](https://rishabhmalviya.github.io)
-
+<Location> • <Phone> • <Email>
+[LinkedIn](<LinkedIn_URL>) • [GitHub]<GitHub_URL> • [Personal Website](<PersonalWebsite_URL>)
 
 ## PROFESSIONAL SUMMARY
 
@@ -105,7 +104,10 @@ Summer 2016 | Tokyo, Japan
 ### Stanford University - Graduate Course: Reinforcement Learning for Robotics
 Completed June 2026
 
-- Final project: [BSP - Body Schema Pretraining](https://github.com/RishabhMalviya/bsp), a novel reward-free pre-training framework for sample-efficient locomotion RL (see Projects).
+- Trained flow matching diffusion policies with behavior cloning imitation learning on video game environments
+- Trained online Actor-Critic methods like PPO with GAE and SAC (combined with imitation learning pre-training) on complex robotic manipulation tasks in MetaWorld environments
+- Trained offline Actor-Critic methods like AWAC and IQL on D4RL (which is built on top of MuJoCo environments) benchmark maze tasks requiring robotic locomotion and navigation
+- Final project: [BSP - Body Schema Pretraining](https://cs224r.stanford.edu/projects/pdfs/Rishabh%20Malviya%20submission_416289307/BSP_-_Project_Report.pdf), a novel reward-free pre-training framework for sample-efficient locomotion RL (see Projects).
 
 ### Indian Institute of Technology (IIT) Bombay - B.Tech, Engineering Physics + Minor in Applied Statistics (GPA: 8.1/10)
 Aug 2013 - Mar 2017
