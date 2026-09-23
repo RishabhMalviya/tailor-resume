@@ -113,7 +113,8 @@ Completed June 2026
 Aug 2013 - Mar 2017
 
 - IIT-JEE 2013: All-India Rank 490 out of 1.5M candidates (top 0.03%).
-- B.Tech. Thesis - Lattice Boltzmann Simulations
+- B.Tech. Thesis: [Lattice Boltzmann Simulations of Active (Cell Cytoplasm) Fluids](https://drive.google.com/file/d/1xp0pscWMvgcMtIRVCKDzdk_EECBoFYTO/view?usp=sharing)
+- Neuromorphic Computing Course Project - [Neural Oscillations During Sleep and Its Effects on Memory Consolidation in Spiking Neural Networks](https://docs.google.com/presentation/d/0B2-4n9c8lZ_YY0hybnhreER4T2M/edit?usp=sharing&ouid=109513371659549878070&resourcekey=0-xNwQJRuPGTl81DgmDUThxg&rtpof=true&sd=true)
 - One of the few IIT Bombay undergraduates to secure an international internship at Honda Research Institute - Japan. Improved [Bidirectional LSTM-CNN models](https://www.jp.honda-ri.com/en/publications/?bib_id=1199) for Coreference Resolution (this was back when Torch was still a Lua library).
 - Core team member of IIT-B's Self-Driving Car team: implemented an Extended Kalman Filter for sensor fusion feeding localization and SLAM modules (Python & C++/ROS).
 - Mentor at the IIT-B Innovation Cell. Mentored the team that [won the Intelligent Ground Vehicle Challenge 2017](https://www.youtube.com/playlist?list=PLe6X1plHWeG3n1htDajUyZqrHu2G5q-VE)
@@ -139,7 +140,6 @@ Aug 2013 - Mar 2017
 - [Siamese Networks-Based Facial Recognition ROS Wrapper](https://github.com/RishabhMalviya/face_recognition_ros_wrapper) - ROS/catkin package exposing few-shot facial recognition (Siamese-network embeddings via dlib / `face_recognition`) as ROS services and nodes; supports face-encoding registration, static-image inference, and real-time recognition off a live `sensor_msgs/Image` stream published to a ROS topic. Robotics-stack integration in C++/CMake + Python.
 
 - [Spiking Neural Networks for Arduino](https://github.com/RishabhMalviya/SNN_Arduino) - C++ Arduino library for building neuromorphic robot controllers: LIF spiking neurons accepting analog and asynchronous digital sensor input, composable into arbitrary network motifs following liquid-state-machine / reservoir-computing paradigms, with motor neurons wired directly to L293D drivers for actuation. Associated with a summer internship at IIT Delhi.
-
 
 ---
  
