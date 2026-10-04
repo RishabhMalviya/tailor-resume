@@ -13,8 +13,8 @@ Innovative engineer with 8+ years of experience building data-driven systems acr
 ## CORE SKILLS
 
 - Languages: Python (10+ years, expert), C++, Java, Kotlin, TypeScript, Bash, Go (migration experience), SQL
-- ML / AI: PyTorch (incl. Distributed Data Parallel / `torchrun`), Computer Vision (YOLOv7, object detection, quantization), Reinforcement Learning (PPO actor-critic, curiosity-driven / intrinsic-reward exploration, reward-free pre-training, Transformer world/dynamics models, Deep Q-Networks; Stanford graduate coursework in RL for Robotics), MuJoCo / DeepMind Control Suite / Gymnasium, Physics-informed / Scientific ML (neural PDE surrogates, Transformer-based neural operators), NLP, GraphSAGE / Knowledge Graphs, AI Agents & MCP Servers, Siamese Networks, Spiking Neural Networks
-- MLOps & Platforms: MLFlow (experiment & artifact tracking), SageMaker, Kubeflow-style orchestration frameworks (built in-house), Evidently (model monitoring), TensorRT, Airflow, model registries, automated retraining pipelines, shadow testing, multi-GPU distributed training (DDP, checkpoint/resume, gradient sync), `uv`-managed reproducible environments
+- ML / AI: PyTorch (incl. Distributed Data Parallel / `torchrun`), Computer Vision (YOLOv7, object detection, quantization), Reinforcement Learning (PPO actor-critic, curiosity-driven / intrinsic-reward exploration, reward-free pre-training, Deep Q-Networks; Stanford graduate coursework in RL for Robotics), MuJoCo / DeepMind Control Suite / Gymnasium, NLP, GraphSAGE / Knowledge Graphs, AI Agents, Siamese Networks, Spiking Neural Networks
+- MLOps & Platforms: MLFlow (experiment & artifact tracking), SageMaker, Kubeflow-style orchestration frameworks (built in-house), Evidently (model monitoring), Airflow, model registries, automated retraining pipelines, shadow testing, multi-GPU distributed training with DDP, `uv`-managed reproducible environments
 - Infrastructure & DevOps: Docker, Kubernetes (EKS/ECS, OpenShift), Terraform (IaC, multi-account AWS provisioning), GitHub Actions, GitLab CI/CD, Prometheus & Grafana, Redis, GPU provisioning & monitoring
 - Cloud & Data: AWS (extensive), Azure, Snowflake, PostgreSQL (RDS, Supabase), DynamoDB, scalable data pipelines (1M+ data points/day), large 3D/simulation datasets (CFD surface meshes, VTK/`.vtp`)
 - Environments: Ubuntu, Alpine Linux, Amazon Linux, WSL2; apt/dpkg packaging and Linux command-line tooling
@@ -149,3 +149,7 @@ Aug 2013 - Mar 2017
 - [Deeplearning.ai - Natural Language Processing with Attention Models](https://www.coursera.org/account/accomplishments/verify/9VQDS2F8VCRJ)
 - Terra.do - Climate Change: Learning for Action
 - [CompTIA A+](https://www.credly.com/badges/0a10e839-c66b-4c79-8e47-3764bad2d548/public_url)
+
+
+## INTERESTS & BEYOND WORK
+- [Airbnb Superhost](https://www.airbnb.com/users/profile/1533555251263775139) for a [Guest Favorite Listing](https://www.airbnb.com/rooms/1533555250309343227?source_impression_id=p3_1791140076_P3sefCOZtlO1nV_n) — Run a 5-star San Francisco rental (100% 5-star reviews, 100% response rate, perfect 5.0 communication rating). An ongoing, hands-on exercise in customer experience, reliability, and clear communication with a global guest base.
